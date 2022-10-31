@@ -1,0 +1,70 @@
+-- dogworl hub closed beta
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local mainbk = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local disclaimer = Instance.new("TextLabel")
+local open = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+mainbk.Name = "mainbk"
+mainbk.Parent = ScreenGui
+mainbk.BackgroundColor3 = Color3.fromRGB(174, 255, 69)
+mainbk.BorderColor3 = Color3.fromRGB(31, 53, 13)
+mainbk.Position = UDim2.new(0.147381246, 0, 0.315699667, 0)
+mainbk.Size = UDim2.new(0, 436, 0, 320)
+mainbk.Active = true
+mainbk.draggable = true
+
+title.Name = "title"
+title.Parent = mainbk
+title.BackgroundColor3 = Color3.fromRGB(174, 255, 69)
+title.Size = UDim2.new(0, 436, 0, 50)
+title.Font = Enum.Font.SourceSans
+title.Text = "Dogworl Community Hub (Pre-release alpha)"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextSize = 14.000
+
+TextButton.Parent = mainbk
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.0481651388, 0, 0.240624994, 0)
+TextButton.Size = UDim2.new(0, 127, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Autospam discord link"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+discord.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Slimeslinger/dogworl221/main/dogworlautotp.lua?token=GHSAT0AAAAAAB2T333RBOC4X4VVR5RZ3QWQY3AL5QQ"))()
+end)
+
+disclaimer.Name = "disclaimer"
+disclaimer.Parent = mainbk
+disclaimer.BackgroundColor3 = Color3.fromRGB(174, 255, 69)
+disclaimer.BorderColor3 = Color3.fromRGB(174, 255, 69)
+disclaimer.Position = UDim2.new(0.270642191, 0, 0.821874976, 0)
+disclaimer.Size = UDim2.new(0, 200, 0, 50)
+disclaimer.Font = Enum.Font.SourceSans
+disclaimer.Text = "PRE RELEASE. DO NOT DISTRIBUTE!"
+disclaimer.TextColor3 = Color3.fromRGB(0, 0, 0)
+disclaimer.TextSize = 14.000
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+open.Position = UDim2.new(0.0158343483, 0, 0.0426621214, 0)
+open.Size = UDim2.new(0, 108, 0, 49)
+
+TextButton_2.Parent = open
+TextButton_2.BackgroundColor3 = Color3.fromRGB(174, 255, 69)
+TextButton_2.Size = UDim2.new(0, 108, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Open GUI"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
